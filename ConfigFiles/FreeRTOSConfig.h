@@ -31,7 +31,6 @@
 #ifndef FREERTOS_CONFIG_H
 #define FREERTOS_CONFIG_H
 
-#define CMSIS_device_header "stm32g070xx.h"
 /*-----------------------------------------------------------
  * Application specific definitions.
  *

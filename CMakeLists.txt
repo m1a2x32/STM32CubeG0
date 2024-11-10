@@ -43,3 +43,7 @@ target_compile_options(${LIBRARY_NAME} PRIVATE
     -mcpu=cortex-m0plus
     -mfloat-abi=soft
 )
+
+target_compile_definitions(${LIBRARY_NAME} PRIVATE
+    STM32G070xx
+)

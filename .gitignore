@@ -1,0 +1,5 @@
+# Cmake output
+CMakeFiles/*
+
+Makefile
+cmake*

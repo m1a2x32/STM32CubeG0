@@ -1,10 +1,10 @@
 cmake_minimum_required(VERSION 3.22)
 
+cmake_policy(SET CMP0156 NEW)
+
 project(STM32CubeG0_Library)
 
 set(LIBRARY_NAME STM32CubeG0)
-
-# enable_language(C ASM)
 
 set(CMSIS_DIR ${CMAKE_CURRENT_SOURCE_DIR}/Drivers/CMSIS)
 message(STATUS "CMSIS Path: ${CMSIS_DIR}")
@@ -34,7 +34,7 @@ add_library(${LIBRARY_NAME} STATIC
     ${RTOS_SOURCES}
 )
 
-target_include_directories(${LIBRARY_NAME} SYSTEM INTERFACE
+target_include_directories(${LIBRARY_NAME} PUBLIC
     ${INCLUDE_LIST}
 )
 
